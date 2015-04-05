@@ -76,9 +76,10 @@
 		<textarea name="quote" cols="50" rows="10"></textarea><br>
 		<input type="submit" id="add" value="Add my quote!">
 	</form>
-	<form action="process.php" method="post" class="inline">
+	<a href="main.php">Skip</a>
+	<!-- <form action="process.php" method="post" class="inline">
 		<input type="hidden" name="skip" value="skipme">
 		<input type="submit" value="Skip to quotes!">
-	</form>
+	</form> -->
 </body>
 </html>

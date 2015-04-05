@@ -21,12 +21,12 @@
 	}
 	else
 	{
-		$esc_name = escape_this_string($_POST['name']);
-		$esc_quote = escape_this_string($_POST['quote']);
+		$esc_name = $_POST['name'];
+		$esc_quote = $_POST['quote'];
 
 		$query = "INSERT INTO quotes (name, quote, created_at, updated_at)
 				VALUES('{$esc_name}', '{$esc_quote}', NOW(), NOW())";
-		run_mysql_query($query);
+		// run_mysql_query($query);
 		if(!run_mysql_query($query))
 		{
 			$_SESSION['servers'] = '<h3 class="red">Our server seems to dislike your quote. Sorry! Please try again.</h3>';
